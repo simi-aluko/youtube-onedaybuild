@@ -23,7 +23,17 @@ class ViewController: UIViewController, UITableViewDataSource, UITableViewDelega
         model.delegate = self
         model.getVideos()
     }
-
+    
+    override func prepare(for segue : UIStoryboardSegue, sender : Any?){
+        guard tableView.indexPathForSelectedRow != nil else {
+            return
+        }
+        
+        let selectedVideo = videos[tableView.indexPathForSelectedRow!.row]
+        let detailVC = segue.destination as! DetailViewController
+        detailVC.video = selectedVideo
+    }
+    
     //MARK: - TableView methods
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return videos.count

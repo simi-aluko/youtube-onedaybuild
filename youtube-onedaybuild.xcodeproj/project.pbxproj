@@ -20,6 +20,8 @@
 		509C067F24F976FB00FFEA85 /* Response.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C067E24F976FB00FFEA85 /* Response.swift */; };
 		509C068124FA9A3A00FFEA85 /* VideoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 509C068024FA9A3A00FFEA85 /* VideoTableViewCell.swift */; };
 		50A2DD2224FB872A00F98E07 /* CacheManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A2DD2124FB872A00F98E07 /* CacheManager.swift */; };
+		50A2DD2424FB9AAA00F98E07 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50A2DD2324FB9AAA00F98E07 /* DetailViewController.swift */; };
+		50BBCCE824FBB11B006A3085 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 50BBCCE724FBB11B006A3085 /* WebKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +40,8 @@
 		509C067E24F976FB00FFEA85 /* Response.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Response.swift; sourceTree = "<group>"; };
 		509C068024FA9A3A00FFEA85 /* VideoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoTableViewCell.swift; sourceTree = "<group>"; };
 		50A2DD2124FB872A00F98E07 /* CacheManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CacheManager.swift; sourceTree = "<group>"; };
+		50A2DD2324FB9AAA00F98E07 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		50BBCCE724FBB11B006A3085 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50BBCCE824FBB11B006A3085 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +61,7 @@
 			children = (
 				509C066124EFAF1900FFEA85 /* youtube-onedaybuild */,
 				509C066024EFAF1900FFEA85 /* Products */,
+				50BBCCE624FBB11B006A3085 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -72,14 +78,13 @@
 			children = (
 				509C066224EFAF1900FFEA85 /* AppDelegate.swift */,
 				509C066424EFAF1900FFEA85 /* SceneDelegate.swift */,
+				509C067024EFAF1A00FFEA85 /* Info.plist */,
+				509C066B24EFAF1A00FFEA85 /* Assets.xcassets */,
 				509C068624FA9AA400FFEA85 /* Storyboards */,
 				509C068524FA9A9300FFEA85 /* Models */,
 				509C068424FA9A8B00FFEA85 /* Helpers */,
 				509C068324FA9A8400FFEA85 /* ViewControllers */,
 				509C068224FA9A7800FFEA85 /* Views */,
-				509C066B24EFAF1A00FFEA85 /* Assets.xcassets */,
-				509C066D24EFAF1A00FFEA85 /* LaunchScreen.storyboard */,
-				509C067024EFAF1A00FFEA85 /* Info.plist */,
 			);
 			path = "youtube-onedaybuild";
 			sourceTree = "<group>";
@@ -95,6 +100,7 @@
 		509C068324FA9A8400FFEA85 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				50A2DD2324FB9AAA00F98E07 /* DetailViewController.swift */,
 				509C066624EFAF1900FFEA85 /* ViewController.swift */,
 			);
 			path = ViewControllers;
@@ -123,9 +129,18 @@
 		509C068624FA9AA400FFEA85 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
+				509C066D24EFAF1A00FFEA85 /* LaunchScreen.storyboard */,
 				509C066824EFAF1900FFEA85 /* Main.storyboard */,
 			);
 			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		50BBCCE624FBB11B006A3085 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				50BBCCE724FBB11B006A3085 /* WebKit.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -199,6 +214,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				50A2DD2424FB9AAA00F98E07 /* DetailViewController.swift in Sources */,
 				509C067F24F976FB00FFEA85 /* Response.swift in Sources */,
 				509C067D24F83A4B00FFEA85 /* ConstantsTemplate.swift in Sources */,
 				509C066724EFAF1900FFEA85 /* ViewController.swift in Sources */,
